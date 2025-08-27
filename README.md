@@ -1,4 +1,4 @@
-```markdown
+
 ---
 
 ## 🛠️ Asset-Corrosion Image Classifier
@@ -16,7 +16,7 @@ This repository shows how to
 
 ## 📂 Project Layout
 
-```
+```bash
 .
 ├── app.py                  # Flask REST API
 ├── model_wrapper.py        # Loads Keras model once; single-image inference
