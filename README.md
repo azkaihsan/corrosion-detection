@@ -1,5 +1,7 @@
 ```markdown
-# 🛠️ Asset-Corrosion Image Classifier
+---
+
+## 🛠️ Asset-Corrosion Image Classifier
 
 This repository shows how to
 
@@ -239,4 +241,3 @@ PRs and issues are welcome! Please open a discussion if you want to add a new fe
 MIT – do whatever you want, **no warranty**.
 
 Happy hacking! 🚀
-```
