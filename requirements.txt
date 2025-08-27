@@ -1,5 +1,5 @@
 # ----- Core deep-learning stack -----
-tensorflow==2.15.0          # includes Keras 2.15 and EfficientNetB0
+tensorflow==2.15.0          # includes Keras 2.15 and EfficientNetB0. Can use tensorflow-gpu if you have a GPU and can use newer versions of tensorflow.
 numpy==1.26.4               # upper range supported by TF-2.15
 
 # ----- Classical ML / metrics -----
