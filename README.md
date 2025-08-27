@@ -35,6 +35,28 @@ This repository shows how to
 
 ---
 
+## 🖥️ System Requirements
+
+| Category        | Minimum (works, slower)                                   | Recommended (faster / smoother)                                   |
+|-----------------|-----------------------------------------------------------|-------------------------------------------------------------------|
+| Operating System| Linux, macOS or Windows 10/11                             | Linux (Ubuntu 20.04+ LTS)                                         |
+| Python Version  | 3.9 – 3.11                                                | 3.10 (64-bit)                                                     |
+| CPU             | 2 cores, 64-bit                                           | 4+ cores, AVX-capable                                             |
+| RAM             | 4 GB (training on small datasets)                         | 8–16 GB                                                           |
+| GPU (optional)  | — (CPU-only training/inference)                           | NVIDIA GPU with CUDA 11.8 (≥ 4 GB VRAM) + latest driver + cuDNN 8 |
+| Disk Space      | ~2 GB (code + virtual-env + model + few thousand images)  | 5 GB+ (room for checkpoints, logs, larger dataset)                |
+| Network         | Not required for training; outbound access needed only to download pre-trained ImageNet weights on first run |
+
+**Notes**
+
+1. *CPU-only* training is fine for a few hundred images; expect minutes per epoch.  
+   For tens of thousands of images, a CUDA-capable GPU is strongly advised.
+2. If you use a GPU, install the matching `tensorflow-gpu` wheel or a recent `tensorflow` build with CUDA 11.8 support.  
+3. Windows Subsystem for Linux 2 (WSL2) + CUDA can also be used if native Linux isn’t available.
+4. Disk usage grows with dataset size and TensorBoard logs; adjust accordingly.
+
+---
+
 ## 🚀 Quick-Start
 
 1. **Create and activate a virtual environment (optional but recommended)**
